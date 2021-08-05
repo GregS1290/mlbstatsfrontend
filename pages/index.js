@@ -9,7 +9,23 @@ import {
   nlCentral,
   nlWest,
 } from '../assets/teamdata';
+import HittingLeaders from '../components/hittingLeaders';
+import PitchingLeaders from '../components/pitchingLeaders';
 
 export default function Home() {
-  return <></>;
+  return (
+    <>
+      <Head>
+        <title>MLB Stats</title>
+      </Head>
+      <main>
+        <div>
+          <HittingLeaders />
+        </div>
+        <div>
+          <PitchingLeaders />
+        </div>
+      </main>
+    </>
+  );
 }
